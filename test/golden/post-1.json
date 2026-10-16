@@ -1,0 +1,11 @@
+{
+    "@odata.context": "$metadata#Post/$entity",
+    "@odata.metadataEtag": "W/\"20261015160032\"",
+    "Id": 1,
+    "UserId": 10241,
+    "Body": "Fast tomorrow small bug big droplet. Weird cache really project rarely everything?",
+    "CreatedAt": "2025-01-01T00:00:34.152Z",
+    "Author": "happy_nebula_10241",
+    "LikeCount": 11,
+    "SAP__Messages": []
+}

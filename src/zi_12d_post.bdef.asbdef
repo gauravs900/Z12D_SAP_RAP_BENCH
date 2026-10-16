@@ -1,0 +1,26 @@
+managed implementation in class zbp_i_12d_post unique;
+strict ( 2 );
+
+define behavior for ZI_12D_POST alias Post
+persistent table z12d_posts
+lock master
+authorization master ( none )
+late numbering
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) Id, CreatedAt, Author, LikeCount;
+  field ( mandatory ) Body;
+
+  action ( lock: none ) likePost parameter ZA_12D_LIKE_PARAM result [1] z12d_s_like_result;
+
+  mapping for z12d_posts
+    {
+      Id        = id;
+      UserId    = user_id;
+      Body      = body;
+      CreatedAt = created_at;
+    }
+}

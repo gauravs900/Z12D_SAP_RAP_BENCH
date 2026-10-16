@@ -1,0 +1,11 @@
+{
+    "@odata.context": "$metadata#Post/$entity",
+    "@odata.metadataEtag": "W/\"20261015160032\"",
+    "Id": 250000,
+    "UserId": 34835,
+    "Body": "Network of debugging release.",
+    "CreatedAt": "2025-07-02T11:59:09.16Z",
+    "Author": "sharp_nebula_34835",
+    "LikeCount": 0,
+    "SAP__Messages": []
+}

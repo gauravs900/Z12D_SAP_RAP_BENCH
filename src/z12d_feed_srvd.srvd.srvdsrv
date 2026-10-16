@@ -1,0 +1,5 @@
+@EndUserText.label: '12$ Challenge - Feed Service Definition'
+define service Z12D_FEED_SRVD {
+  expose ZC_12D_POST as Post;
+  expose ZI_12D_USER as User;
+}

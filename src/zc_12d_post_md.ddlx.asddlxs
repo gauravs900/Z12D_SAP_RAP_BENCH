@@ -1,0 +1,46 @@
+@Metadata.layer: #CUSTOMER
+@UI: {
+  headerInfo: {
+    typeName: 'Post',
+    typeNamePlural: 'Posts',
+    title: { type: #STANDARD, value: 'Author' },
+    description: { value: 'CreatedAt' }
+  }
+}
+annotate view ZC_12D_POST with
+{
+  @UI.facet: [
+    {
+      id: 'PostHeader',
+      purpose: #STANDARD,
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Post Information',
+      position: 10
+    }
+  ]
+
+  @UI.lineItem: [
+    { position: 10, label: 'Post ID' },
+    { type: #FOR_ACTION, dataAction: 'likePost', label: 'Like Post' }
+  ]
+  @UI.identification: [ { position: 10, label: 'Post ID' } ]
+  @UI.selectionField: [ { position: 10 } ]
+  Id;
+
+  @UI.lineItem: [ { position: 20, label: 'Author' } ]
+  @UI.identification: [ { position: 20, label: 'Author' } ]
+  @UI.selectionField: [ { position: 20 } ]
+  Author;
+
+  @UI.lineItem: [ { position: 30, label: 'Content' } ]
+  @UI.identification: [ { position: 30, label: 'Content' } ]
+  Body;
+
+  @UI.lineItem: [ { position: 40, label: 'Created At' } ]
+  @UI.identification: [ { position: 40, label: 'Created At' } ]
+  CreatedAt;
+
+  @UI.lineItem: [ { position: 50, label: 'Like Count' } ]
+  @UI.identification: [ { position: 50, label: 'Like Count' } ]
+  LikeCount;
+}
